@@ -1,7 +1,7 @@
 {
   "name": "gh-page_react_test",
   "version": "0.1.0",
-  "homepage": "https://lionorlix.github.io/gh-page_react_test",
+  "homepage": "https://lionorlix.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
