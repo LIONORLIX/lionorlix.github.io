@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'normal'; 
+    src: url(source/PlusJakartaSans-Bold.ttf);
+}
+
+*{
+    font-family:'normal';
+    margin:0;
+    padding:0;
+    font-size:2vmax;
+}
+
+a:link { text-decoration: none;color: #2b00ff}
+a:active { text-decoration:blink}
+a:hover { text-decoration:underline; color: red}
+
+#circle{
+    display: inline-block;
+    height: 1.5vmax;
+    width: 1.5vmax;;
+    border-radius: 100px;
+    background-color:  #2b00ff;
+}
+#name{
+    color: #2b00ff;
+}
+
+
+.nav-div{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.nav-align{
+    text-align: center;
+}
+    
+.nav-bar {
+    background-color: rgba(255, 255, 255, 0.0);
+    width: 100%;
+    position: fixed;
+    top: 3vmin;
+    /* padding:30px; */
+    /* text-align: center; */
+    z-index: 1;
+}
+
+.nav-spacer{
+    height:1px;
+    width: 35vw;
+}
+
+.nav-logo{
+    width: 30vw;
+    text-align: left;
+}
+
+.nav-content{
+    text-align: right;
+    width: 30vw;
+}
+
+.project-list{
+    margin: 10vh 10vw;
+    margin-top: 15vh;
+}
+
+.project-container{
+    position: relative;
+    z-index: 999;
+}
+
+.slide{
+    display: inline-block;
+    height: 8vh;
+    width: 8vh;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -75vh);
+}
+
+.slide svg{
+    fill: white;
+}
+
+.project-page-container{
+    margin:0;
+    padding:0;
+    overflow: scroll;
+    height:75vh;
+    white-space:nowrap; 
+    font-size:0;
+}
+.single-page{
+    display:inline-block;
+    /* margin: 0 -5px; */
+    padding:0;
+    border:0;
+    height:100%;
+}
+
+.single-page img{
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    height:100%;
+}
+
+.description{
+    font-size: 1.5vmax;
+}
+
+.cls-1:hover{
+    /* scale: 120%; */
+}
+
+.cls-3:hover{
+    /* scale: 120%; */
+}
+
+#proj03-logo-g:hover .cls-2{
+    /* scale: 120%; */
+}
+
+.footer{
+    height: 100vh;
+}

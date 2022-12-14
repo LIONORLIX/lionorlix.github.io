@@ -2,61 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-
-        .project-title{
-            font-size: 24pt;
-            margin-top: 3vh;
-            
-        }
-
-        .project-description{
-            font-size: 16pt;
-        }
-
-        .project-page-container{
-            margin:0;
-            padding:0;
-            overflow: scroll;
-            height:80vh;
-            white-space:nowrap; 
-        }
-        .single-page{
-            display:inline-block;
-            margin:-5px;
-            padding:0;
-            border:0;
-            height:100%;
-        }
-
-        .single-page img{
-            display:block;
-            margin:0;
-            padding:0;
-            border:0;
-            height:100%;
-        }
-    </style>
+    <title>LIX</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="project-container">
-        <div class="project-title">
-            <h1>
-                WHERE
-            </h1>
+    <div class="nav-bar">
+        <div class="nav-align">
+            
+            <div class="nav-logo nav-div" onclick="home()">
+                <div id="circle">
+                
+                </div>
+                <div id="name">
+                LI Xiang
+                </div>
+            </div>
+            <div class="nav-spacer nav-div"></div>
+            <div class="nav-content nav-div">
+            <div>
+                <a href="">Works
+                </a>
+            </div>
+            <div>
+                <a href="">About Me</a>
+            </div>
+            </div>
         </div>
-        <!-- <div class="project-description">
-            <p>
-                WHERE
-            </p>
-        </div> -->
+    </div>
+    <div class="project-list">
+        <svg id="_layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 925.04 459.45">
+            <defs>
+                <style>
+                    .cls-1{fill:#fa0;}
+                    .cls-2{fill:#16162b;}
+                    .cls-3{fill:#6257e7;}
+                </style>
+            </defs>
+            <polygon id="proj02-logo" class="cls-1 svg-graphic" points="386.99 258.5 170.63 327.68 202.99 192.74 498.22 149.22 712.38 203.86 720 333.01 386.99 258.5"/>
+            <g id="proj03-logo-g svg-graphic">
+                <polygon id="proj3-logo" class="cls-2" points="701.06 234.11 674.44 253.18 678.74 234.11 662.91 234.11 662.91 459.45 693.97 459.45 685.62 436.17 728.29 459.45 760.75 459.45 712.11 403.3 829.83 418.67 724.93 363.08 840.25 334.88 722.35 320.94 819.7 252.99 704.73 282.58 737.31 234.11 701.06 234.11"/>
+                <polygon id="proj3-logo" class="cls-2" points="904.79 234.11 919.2 265.71 847.63 234.11 827.35 234.11 895.55 300.68 776.96 295.2 886.14 341.83 773.58 379.56 892.22 383.61 800.89 459.45 912.99 420.36 891.22 459.45 925.04 459.45 925.04 234.11 904.79 234.11"/>
+            </g>
+            <path id="proj1-logo" class="cls-3 svg-graphic" d="M138.28,0C61.91,0,0,61.91,0,138.28s61.23,126.25,137.59,126.25,138.96-49.88,138.96-126.25S214.65,0,138.28,0M36.13,200.38c-8.38,2.44-18.63-7.47-22.9-22.13-4.26-14.66-.92-28.52,7.46-30.95,8.38-2.44,18.63,7.47,22.9,22.13,4.26,14.66,.92,28.52-7.46,30.95M179.93,87.76c-26.21-18.13-38.37-45.98-27.15-62.2,11.22-16.22,35.67-11.86,61.89,6.27,26.21,18.13,44.26,43.18,33.04,59.39-11.22,16.22-41.56,14.67-67.78-3.47"/>
+        </svg>
+        <div class="description-container">
+            <div class="title">
+                Portfolio 2022
+            </div>
+            <div class="description">
+                Slide Down or Click on the graphics to view more.
+            </div>
+        </div>
+
+    </div>
+    <div class="project-container">
+        
         <div class="project-page-container">
             <div class="single-page">
                 <img src="source/proj01/Proj01_Cover.png"/>
@@ -80,18 +80,11 @@
                 <img src="source/proj01/Proj01_Page6.png"/>
             </div>
         </div>
+        <div class="slide">
+            <img src="source/slide.svg"/>
+        </div>
     </div>
     <div class="project-container">
-        <div class="project-title">
-            <h1>
-                MOMOCAN
-            </h1>
-        </div>
-        <!-- <div class="project-description">
-            <p>
-                WHERE
-            </p>
-        </div> -->
         <div class="project-page-container">
             <div class="single-page">
                 <img src="source/proj02/Proj02_Cover.png"/>
@@ -112,13 +105,16 @@
                 <img src="source/proj02/Proj02_Page5.png"/>
             </div>
         </div>
+        <div class="slide">
+            <img src="source/slide.svg"/>
+        </div>
     </div>
     <div class="project-container">
-        <div class="project-title">
+        <!-- <div class="project-title">
             <h1>
                 MOMOCAN
             </h1>
-        </div>
+        </div> -->
         <!-- <div class="project-description">
             <p>
                 WHERE
@@ -144,6 +140,12 @@
                 <img src="source/proj03/Proj03_Page5.png"/>
             </div>
         </div>
+        <div class="slide">
+            <img src="source/slide.svg"/>
+        </div>
+    </div>
+    <div class="footer">
+
     </div>
 </body>
 </html>
