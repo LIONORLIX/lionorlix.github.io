@@ -10,7 +10,11 @@
     font-size:2vmax;
 }
 
-a:link { text-decoration: none;color: #2b00ff}
+a:link { 
+    text-decoration: none;
+    color: #2b00ff;
+    transition:color 500ms;
+}
 a:active { text-decoration:blink}
 a:hover { text-decoration:underline; color: red}
 
@@ -28,7 +32,7 @@ a:hover { text-decoration:underline; color: red}
 
 .nav-div{
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 
 .nav-align{
@@ -61,8 +65,8 @@ a:hover { text-decoration:underline; color: red}
 }
 
 .project-list{
-    margin: 10vh 10vw;
-    margin-top: 15vh;
+    padding: 10vh 10vw;
+    padding-top: 15vh;
 }
 
 .project-container{
@@ -76,7 +80,7 @@ a:hover { text-decoration:underline; color: red}
     width: 8vh;
     position: absolute;
     right: 50%;
-    transform: translate(50%, -75vh);
+    transform: translate(50%, -74vh);
 }
 
 .slide svg{
@@ -110,18 +114,28 @@ a:hover { text-decoration:underline; color: red}
 .description{
     font-size: 1.5vmax;
 }
-
+.cls-1{
+    fill:#fa0;
+    transition:fill 500ms;
+}
+.cls-2{
+    fill:#16162b;
+    transition:fill 500ms;
+}
+.cls-3{
+    fill:#6257e7;
+    transition:fill 500ms;
+}
 .cls-1:hover{
-    /* scale: 120%; */
+    fill: red;
 }
-
-.cls-3:hover{
-    /* scale: 120%; */
-}
-
 #proj03-logo-g:hover .cls-2{
-    /* scale: 120%; */
+    fill: red;
 }
+.cls-3:hover{
+    fill: red;
+}
+
 
 .footer{
     height: 100vh;
