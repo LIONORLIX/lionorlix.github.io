@@ -17,6 +17,26 @@ a:link {
 }
 a:active { text-decoration:blink}
 a:hover { text-decoration:underline; color: red}
+a:visited:hover { text-decoration:underline; color: red}
+a:visited{color: #2b00ff;}
+
+a:hover #name{
+    color: red;
+    transition:color 500ms;
+}
+a:hover #circle{
+    background-color: red;
+    transition:background-color 500ms;
+}
+
+a:visited:hover #name{
+    color: red;
+    transition:color 500ms;
+}
+a:visited:hover #circle{
+    background-color: red;
+    transition:background-color 500ms;
+}
 
 #circle{
     display: inline-block;
@@ -28,8 +48,6 @@ a:hover { text-decoration:underline; color: red}
 #name{
     color: #2b00ff;
 }
-
-
 .nav-div{
     display: inline-block;
     vertical-align: top;
@@ -51,36 +69,103 @@ a:hover { text-decoration:underline; color: red}
 
 .nav-spacer{
     height:1px;
-    width: 35vw;
+    width: 10vw;
 }
 
 .nav-logo{
-    width: 30vw;
+    width: 20vw;
     text-align: left;
 }
 
 .nav-content{
     text-align: right;
-    width: 30vw;
+    width: 65vw;
+}
+
+.sub-item a{
+    font-size: 1.5vmax;
+
+}
+.sub-item span{
+    font-size: 1vmax;
+    color: #2b00ff;
+}
+
+.top-block{
+    padding-top: 25vmin !important;
+}
+
+#intro p{
+    padding: 0.5vmin 0;
 }
 
 .project-list{
-    padding: 10vh 10vw;
-    padding-top: 15vh;
+    padding: 5vmin 10vw;
 }
+
+.work-page-container{
+    /* padding:0; */
+    overflow: scroll;
+    padding: 5vmin 10vw;
+    white-space:nowrap; 
+    font-size:0;
+}
+.two-line-container{
+    display: inline-block;
+    width: 15vmax;
+    margin-right: 10vmin;
+    white-space:normal; 
+    vertical-align: top;
+}
+.single-work{
+    display:block;
+    height: 20vmax;
+    padding:0;
+    padding-bottom: 8vmin;
+    border:0;
+}
+.info{
+    height: 70%;
+}
+.detail{
+    height: 30%;
+    vertical-align: bottom;
+}
+.view{
+    font-size: 1.5vmax;
+}
+.soon{
+    color: rgb(255, 123, 0);
+}
+
+.single-work img{
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    height:100%;
+}
+.single-work p{display:block; width: 100%;}
+.single-work .tag{font-size: 1.5vmax;}
+.single-work .spacer{height:3vmax;}
+.single-work .title{font-size: 2vmax;}
+.single-work .description{font-size: 1.5vmax;}
 
 .project-container{
     position: relative;
-    z-index: 999;
+    height: 100vh;
+    bottom: 0;
+    /* z-index: 999; */
 }
 
 .slide{
     display: inline-block;
-    height: 8vh;
-    width: 8vh;
+    height: 8vmin;
+    width: 8vmin;
     position: absolute;
     right: 50%;
-    transform: translate(50%, -74vh);
+    top: 25vh;
+    transform: translate(50%, 0);
 }
 
 .slide svg{
@@ -91,9 +176,11 @@ a:hover { text-decoration:underline; color: red}
     margin:0;
     padding:0;
     overflow: scroll;
-    height:75vh;
+    height:75%;
     white-space:nowrap; 
     font-size:0;
+    position: relative;
+    top: 25%;
 }
 .single-page{
     display:inline-block;
@@ -136,7 +223,17 @@ a:hover { text-decoration:underline; color: red}
     fill: red;
 }
 
-
 .footer{
-    height: 100vh;
+    padding: 5vmin 10vw;
+    padding-top: 15vmin;
+    height: 80vmin;
 }
+
+.addition-info{
+    position: absolute;
+    padding: 0 5vw;
+    top: 17vh;
+    
+}
+
+.addition-info p{font-size: 1vmax;color: black !important;}
