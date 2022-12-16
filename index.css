@@ -110,6 +110,9 @@ a:visited:hover #circle{
     white-space:nowrap; 
     font-size:0;
 }
+.work-page-container::-webkit-scrollbar { width: 0 !important }
+.work-page-container { -ms-overflow-style: none;overflow: -moz-scrollbars-none; }
+
 .two-line-container{
     display: inline-block;
     width: 15vmax;
