@@ -5,11 +5,12 @@
     <title>LIX</title>
     <link rel="stylesheet" href="../index.css">
     <style>
-        *{color: #16162b;}
-        .sub-item span{color: #16162b;}
-        a:visited{color: #16162b;}
-        #circle{background-color: #16162b;}
-        #name{color: #16162b;}
+        :root {--main-color: #16162b;}
+        *{color: var(--main-color) !important;}
+        .sub-item span{color: var(--main-color) !important;}
+        a:visited{color: var(--main-color) !important;}
+        #circle{background-color: var(--main-color) !important;}
+        #name{color: var(--main-color) !important;}
     </style>
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <a href="../index.html#Hi!!">
                     <div id="circle"></div>
                     <div id="name">
-                        LI Xiang
+                        Back
                     </div>
                 </a>
             </div>
@@ -50,8 +51,9 @@
         <p></p>
     </div>
 
-    <div id="2022-03" class="project-container">        
-        <div class="project-page-container">
+    <div id="2022-03" class="project-container">    
+            
+        <div class="project-page-container" id="container01">
             <div class="single-page">
                 <img src="../source/proj03/Proj03_Cover.webp"/>
             </div>
@@ -71,10 +73,22 @@
                 <img src="../source/proj03/Proj03_Page5.webp"/>
             </div>
         </div>
-        <div class="slide">
-            <img src="../source/slide.svg"/>
+        <div onclick="scrollH('container01',-0.3)" class="project-browse-button left">
+            <img src="../source/left.svg" />
         </div>
+        <div onclick="scrollH('container01',0.3)" class="project-browse-button right">
+            <img src="../source/right.svg" />
+        </div>
+        <!-- <div class="slide">
+            <img src="../source/slide.svg"/>
+        </div> -->
 
     </div>
 </body>
+<script>
+    function scrollH(id,pace){
+        document.getElementById(id).scrollBy(window.screen.width*pace,0);
+        console.log("yeah");
+    }
+</script>
 </html>

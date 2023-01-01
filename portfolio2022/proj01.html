@@ -5,11 +5,12 @@
     <title>LIX</title>
     <link rel="stylesheet" href="../index.css">
     <style>
-        *{color: #6257e7;}
-        .sub-item span{color: #6257e7;}
-        a:visited{color: #6257e7;}
-        #circle{background-color: #6257e7;}
-        #name{color: #6257e7;}
+        :root {--main-color: #6257e7;}
+        *{color: var(--main-color) !important;}
+        .sub-item span{color: var(--main-color) !important;}
+        a:visited{color: var(--main-color) !important;}
+        #circle{background-color: var(--main-color) !important;}
+        #name{color: var(--main-color) !important;}
     </style>
 </head>
 <body>
@@ -55,7 +56,7 @@
 
     <div id="2022-01" class="project-container">
         
-        <div class="project-page-container">
+        <div class="project-page-container" id="container01">
             <div class="single-page">
                 <img src="../source/proj01/Proj01_Cover.webp"/>
             </div>
@@ -78,10 +79,22 @@
                 <img src="../source/proj01/Proj01_Page6.webp"/>
             </div>
         </div>
-        <div class="slide">
-            <img src="../source/slide.svg"/>
+        <div onclick="scrollH('container01',-0.3)" class="project-browse-button left">
+            <img src="../source/left.svg" />
         </div>
+        <div onclick="scrollH('container01',0.3)" class="project-browse-button right">
+            <img src="../source/right.svg" />
+        </div>
+        <!-- <div class="slide">
+            <img src="../source/slide.svg"/>
+        </div> -->
 
     </div>
 </body>
+<script>
+    function scrollH(id,pace){
+        document.getElementById(id).scrollBy(window.screen.width*pace,0);
+        console.log("yeah");
+    }
+</script>
 </html>

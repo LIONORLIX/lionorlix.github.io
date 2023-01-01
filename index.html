@@ -12,7 +12,6 @@
             <div class="nav-logo nav-div" onclick="home()">
                 <a href="#Hi!!">
                     <div id="circle">
-                
                     </div>
                     <div id="name">
                     LI Xiang
@@ -53,22 +52,28 @@
             </p>
         </div>
     </div>
-
-    <div id="work" class="work-container">
-        
-        <div class="work-page-container">
+    
+    <div id="work" class="work-container">  
+        <div class="work-page-container"  id="container01">
+            <div onclick="scrollH('container01',-0.3)" class="work-browse-button left">
+                <img src="source/left.svg" />
+            </div>
+            <div onclick="scrollH('container01',0.3)" class="work-browse-button right">
+                <img src="source/right.svg" />
+            </div>
             <div class="two-line-container">
                 <div class="single-work">
+                    <!-- <div class="preview">
+                        <img src="source/zine/01.webp" />
+                    </div> -->
                     <div class="info">
                         <p class="tag">Hand-made Zine</p>
                         <p class="spacer"></p>
                         <p class="title">"Zine!Zine!Zine!" Exhibition</p>
                     </div>
                     <div class="detail">
-                        <p class="tag">2022</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
+                        <p class="tag">2021</p>
+                        <a href="works/zine.html"><p class="view">view</p></a>
                     </div>
                 </div>
                 <div class="single-work">
@@ -94,7 +99,7 @@
                     </div>
                     <div class="detail">
                         <p class="tag">2022</p>
-                        <a href="https://gun-violence-us-visualization.github.io"><p class="view">VIEW</p></a>
+                        <a href="https://gun-violence-us-visualization.github.io"><p class="view">view</p></a>
                     </div>
                 </div>
                 <div class="single-work">
@@ -150,7 +155,7 @@
                     </div>
                     <div class="detail">
                         <p class="tag">2021</p>
-                        <a href="https://lionorlix.github.io/MyFirstWebsite"><p class="view">VIEW</p></a>
+                        <a href="https://lionorlix.github.io/MyFirstWebsite"><p class="view">view</p></a>
                     </div>
                 </div>
                 <div class="single-work">
@@ -161,9 +166,7 @@
                     </div>
                     <div class="detail">
                         <p class="tag">2021</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
+                        <a href="works/go_on.html"><p class="view">view</p></a>
                     </div>
                 </div>
             </div>
@@ -259,4 +262,10 @@
     </div>
 </body>
 <script src="js/pop-text.js"></script>
+<script>
+    function scrollH(id,pace){
+        document.getElementById(id).scrollBy(window.screen.width*pace,0);
+        console.log("yeah");
+    }
+</script>
 </html>
