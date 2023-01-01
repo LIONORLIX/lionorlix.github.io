@@ -65,7 +65,6 @@ a:visited:hover #circle{
     /* padding:30px; */
     /* text-align: center; */
     z-index: 1;
-    mix-blend-mode: overlay;
 }
 
 .nav-spacer{
