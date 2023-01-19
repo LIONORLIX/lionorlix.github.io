@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LIX</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-align">
+            <div class="nav-logo nav-div" onclick="home()">
+                <a href="index.html">
+                    <div id="circle">
+                    </div>
+                    <div id="name">
+                    LI Xiang
+                    </div>
+                </a>
+            </div>
+            <div class="nav-spacer nav-div"></div>
+            <div class="nav-content nav-div">
+            <div>
+                <a href="index.html#work">Works
+                </a>
+            </div>
+            <div>
+                <a href="portfolio.html">Portfolio
+                </a>
+            </div>
+            <div>
+                <a href="index.html#about-me">About</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-container" >
+        <div class="portfolio-page-container"  id="portfolio-up">
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj01.html';">
+                <div class="preview">
+                    <img src="source/work_cover/where.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">App Development</p>
+                    <p class="title">WHERE</p>
+                </div>
+            </div>
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj02.html';">
+                <div class="preview">
+                    <img src="source/work_cover/momocan.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Tangible Interaction</p>
+                    <p class="title">MOMO CAN!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-container" >
+        <div class="portfolio-page-container"  id="portfolio-down">
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj03.html';">
+                <div class="preview">
+                    <img src="source/work_cover/galleria.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Interactive Device</p>
+                    <p class="title">Galleria</p>
+                </div>
+            </div>
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj04.html';">
+                <div class="preview">
+                    <img src="source/work_cover/river.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Social Design</p>
+                    <p class="title">River Playground</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script src="js/pop-text.js"></script>
+<script>
+    function scrollH(id,pace){
+            document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
+            console.log(window.screen.width*pace);
+        }
+</script>
+</html>

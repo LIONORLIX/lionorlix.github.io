@@ -8,9 +8,8 @@
 <body>
     <div class="nav-bar">
         <div class="nav-align">
-            
             <div class="nav-logo nav-div" onclick="home()">
-                <a href="#Hi!!">
+                <a href="index.html">
                     <div id="circle">
                     </div>
                     <div id="name">
@@ -21,15 +20,15 @@
             <div class="nav-spacer nav-div"></div>
             <div class="nav-content nav-div">
             <div>
-                <a href="#work">Works
+                <a href="index.html#work">Works
                 </a>
             </div>
             <div>
-                <a href="#2022">Portfolio
+                <a href="portfolio.html">Portfolio
                 </a>
             </div>
             <div>
-                <a href="#about-me">About Me</a>
+                <a href="index.html#about-me">About</a>
             </div>
             </div>
         </div>
@@ -41,7 +40,7 @@
             Hi!
             </p>
             <p>
-            I'm LI Xiang! 
+                I'm LI Xiang! 
             </p>
             <p>
                 And I'm interested in
@@ -52,220 +51,176 @@
             </p>
         </div>
     </div>
-    
-    <div id="work" class="work-container">  
-        <div class="work-page-container"  id="container01">
-            <div onclick="scrollH('container01',-0.3)" class="work-browse-button left">
-                <img src="source/left.svg" />
+
+    <div id="work" class="work-container work-of-year" >
+        <div class="work-of-year-page-container">
+            <div class="single-img-of-year"> 
+                <img src="source/work_cover/2022cover.svg" />
             </div>
-            <div onclick="scrollH('container01',0.3)" class="work-browse-button right">
-                <img src="source/right.svg" />
-            </div>
-            <div class="two-line-container">
-                <div class="single-work">
-                    <!-- <div class="preview">
-                        <img src="source/zine/01.webp" />
-                    </div> -->
+        </div>  
+    </div>
+    <div class="work-container">
+        <div class="work-page-container"  id="work-2021">
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj02.html';">
+                    <div class="preview">
+                        <img src="source/work_cover/momocan.webp" />
+                    </div>
                     <div class="info">
-                        <p class="tag">Hand-made Zine</p>
-                        <p class="spacer"></p>
-                        <p class="title">"Zine!Zine!Zine!" Exhibition</p>
+                        <p class="tag">Tangible Interaction</p>
+                        <p class="title">MOMO CAN!</p>
                     </div>
-                    <div class="detail">
-                        <p class="tag">2021</p>
-                        <a href="works/zine.html"><p class="view">view</p></a>
-                    </div>
+            </div>
+            <div class="single-work can-view" onclick="window.location.href = 'works/zine.html';">
+                <div class="preview">
+                    <img src="source/work_cover/zine.webp" />
                 </div>
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">XR Interaction</p>
-                        <p class="spacer"></p>
-                        <p class="title">Yi Nian: Meditation in VR</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2022</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
+                <div class="info">
+                    <p class="tag">Hand-made Zine</p>
+                    <p class="title">"Zine!Zine!Zine!"</p>
                 </div>
             </div>
-            <div class="two-line-container">
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Data Visualiztion</p>
-                        <p class="spacer"></p>
-                        <p class="title">Gun Violence in the United States</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2022</p>
-                        <a href="https://gun-violence-us-visualization.github.io"><p class="view">view</p></a>
-                    </div>
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj04.html';">
+                <div class="preview">
+                    <img src="source/work_cover/river.webp" />
                 </div>
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Data Visualiztion</p>
-                        <p class="spacer"></p>
-                        <p class="title">Burger King v.s. McDonalds</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2022</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="two-line-container">
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">App Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">ZJU QSC Mobile v4.0</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2021</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Graphic Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">CCI: 2022.5.17 PRIDE</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2022</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
+                <div class="info">
+                    <p class="tag">Social Design</p>
+                    <p class="title">River Playground</p>
                 </div>
             </div>
-            <div class="two-line-container">
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Web Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">My First Website</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2021</p>
-                        <a href="https://lionorlix.github.io/MyFirstWebsite"><p class="view">view</p></a>
-                    </div>
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj03.html';">
+                <div class="preview">
+                    <img src="source/work_cover/galleria.webp" />
                 </div>
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Service Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">GO ON: Decent Work</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2021</p>
-                        <a href="works/go_on.html"><p class="view">view</p></a>
-                    </div>
+                <div class="info">
+                    <p class="tag">Interactive Device</p>
+                    <p class="title">Galleria</p>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/XR.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">XR Research</p>
+                    <p class="title">YI-NIAN: Meditation</p>
+                    <p class="soon">SOON...</p>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/220517.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Graphic Design</p>
+                    <p class="title">CCI: 517 PRIDE</p>
+                    <p class="soon">SOON...</p>
                 </div>
             </div>
             
-            <div class="two-line-container">
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">App Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">ZJU QSC Notify</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2021</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Graphic Design</p>
-                        <p class="spacer"></p>
-                        <p class="title">CCI: 2022.5.17 PRIDE</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2020</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="two-line-container">
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag">Visual Solution</p>
-                        <p class="spacer"></p>
-                        <p class="title">ZJU QSC Recruitment</p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag">2020</p>
-                        <a href="">
-                            <p class="view soon">soon...</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="single-work">
-                    <div class="info">
-                        <p class="tag"></p>
-                        <p class="spacer"></p>
-                        <p class="title"></p>
-                    </div>
-                    <div class="detail">
-                        <p class="tag"></p>
-                        <a href="">
-                            <p class="view"></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div id="2022" class="project-list">
-        <svg id="_layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 925.04 459.45">
-            <a href="portfolio2022/proj02.html">
-                <polygon id="proj02-logo" class="cls-1 svg-graphic" points="386.99 258.5 170.63 327.68 202.99 192.74 498.22 149.22 712.38 203.86 720 333.01 386.99 258.5"/>
-            </a>
-            <a href="portfolio2022/proj03.html">
-                <g id="proj03-logo-g">
-                    <polygon id="proj3-logo" class="cls-2" points="701.06 234.11 674.44 253.18 678.74 234.11 662.91 234.11 662.91 459.45 693.97 459.45 685.62 436.17 728.29 459.45 760.75 459.45 712.11 403.3 829.83 418.67 724.93 363.08 840.25 334.88 722.35 320.94 819.7 252.99 704.73 282.58 737.31 234.11 701.06 234.11"/>
-                    <polygon id="proj3-logo" class="cls-2" points="904.79 234.11 919.2 265.71 847.63 234.11 827.35 234.11 895.55 300.68 776.96 295.2 886.14 341.83 773.58 379.56 892.22 383.61 800.89 459.45 912.99 420.36 891.22 459.45 925.04 459.45 925.04 234.11 904.79 234.11"/>
-                </g>
-            </a>
-            <a href="portfolio2022/proj01.html">
-                <path id="proj1-logo" class="cls-3 svg-graphic" d="M138.28,0C61.91,0,0,61.91,0,138.28s61.23,126.25,137.59,126.25,138.96-49.88,138.96-126.25S214.65,0,138.28,0M36.13,200.38c-8.38,2.44-18.63-7.47-22.9-22.13-4.26-14.66-.92-28.52,7.46-30.95,8.38-2.44,18.63,7.47,22.9,22.13,4.26,14.66,.92,28.52-7.46,30.95M179.93,87.76c-26.21-18.13-38.37-45.98-27.15-62.2,11.22-16.22,35.67-11.86,61.89,6.27,26.21,18.13,44.26,43.18,33.04,59.39-11.22,16.22-41.56,14.67-67.78-3.47"/>
-            </a>
-        </svg>
-        <div class="description-container">
-            <div class="title">
-                Portfolio 2022
-            </div>
-            <div class="description">
-                Click on the graphics to view more.
-            </div>
         </div>
     </div>
 
+    <div class="work-container work-of-year">
+        <div class="work-of-year-page-container">
+            <div class="single-img-of-year"> 
+                <img src="source/work_cover/2021cover.svg" />
+            </div>
+        </div>  
     </div>
+    <div class="work-container">
+        <div class="work-page-container"  id="work-2022">
+            <div class="single-work can-view" onclick="window.location.href = 'portfolio2022/proj01.html';">
+                <div class="preview">
+                    <img src="source/work_cover/where.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">App Development</p>
+                    <p class="title">WHERE</p>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/glyph.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Data Visualization</p>
+                    <p class="title">McDonald VS Burger King</p>
+                    <p class="soon">SOON...</p>
+                </div>
+            </div>
+            <div class="single-work can-view" onclick="window.location.href = 'https://gun-violence-us-visualization.github.io';">
+                <div class="preview">
+                    <img src="source/work_cover/gun.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Data Visualization</p>
+                    <p class="title">Gun Violence in US</p>
+                </div>
+            </div>
+            <div class="single-work can-view" onclick="window.location.href = 'https://lionorlix.github.io/MyFirstWebsite/';">
+                <div class="preview">
+                    <img src="source/work_cover/web1.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Web Development</p>
+                    <p class="title">My First Website</p>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/mobile.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">UI/UX</p>
+                    <p class="title">QSC Mobile 4.0</p>
+                    <div class="detail">
+                        <a href=""><p class="soon">SOON...</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/notify.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">UI/UX</p>
+                    <p class="title">QSC Notify</p>
+                    <div class="detail">
+                        <a href=""><p class="soon">SOON...</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-work" onclick="window.location.href = '';">
+                <div class="preview">
+                    <img src="source/work_cover/20th.webp" />
+                </div>
+                <div class="info">
+                    <p class="tag">Graphic Design</p>
+                    <p class="title">QSC 20th Anniverary</p>
+                    <div class="detail">
+                        <a href=""><p class="soon">SOON...</p></a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    
+
+    
+
     <div id="about-me" class="footer">
-    <div>Something more about me...</div>
-        <p class="view soon">soon...</p>
+        <div>Something more about me...</div>
+        <p class="soon">SOON...</p>
     </div>
 </body>
+
 <script src="js/pop-text.js"></script>
 <script>
     function scrollH(id,pace){
-        document.getElementById(id).scrollBy(window.screen.width*pace,0);
-        console.log("yeah");
-    }
+            document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
+            console.log(window.screen.width*pace);
+        }
 </script>
 </html>

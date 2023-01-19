@@ -46,10 +46,10 @@
                 <img src="../source/go_on/02.webp"/>
             </div>
         </div>
-        <div onclick="scrollH('container01',-0.3)" class="project-browse-button left">
+        <div onclick="scrollH('container01',-0.6)" class="project-browse-button left">
             <img src="../source/left.svg" />
         </div>
-        <div onclick="scrollH('container01',0.3)" class="project-browse-button right">
+        <div onclick="scrollH('container01',0.6)" class="project-browse-button right">
             <img src="../source/right.svg" />
         </div>
         <!-- <div class="slide">
@@ -60,8 +60,8 @@
 </body>
 <script>
     function scrollH(id,pace){
-        document.getElementById(id).scrollBy(window.screen.width*pace,0);
-        console.log("yeah");
-    }
+            document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
+            console.log(window.screen.width*pace);
+        }
 </script>
 </html>

@@ -18,7 +18,7 @@
         <div class="nav-align">
             
             <div class="nav-logo nav-div" onclick="home()">
-                <a href="../index.html#Hi!!">
+                <a href="../portfolio.html">
                     <div id="circle"></div>
                     <div id="name">
                         Back
@@ -28,7 +28,7 @@
             <div class="nav-spacer nav-div"></div>
             <div class="nav-content nav-div">
                 <div>
-                    <a href="../index.html#2022">
+                    <a href="../portfolio.html">
                         Portfolio 2022
                     </a>
                 </div>
@@ -44,6 +44,10 @@
                     <a href="proj03.html">
                         03 Galleria
                     </a>
+                    <span>•</span>
+                    <a href="proj04.html">
+                        04 River Playground
+                    </a>
                 </div>
             </div>
         </div>
@@ -55,7 +59,6 @@
     </div>
 
     <div id="2022-01" class="project-container">
-        
         <div class="project-page-container" id="container01">
             <div class="single-page">
                 <img src="../source/proj01/Proj01_Cover.webp"/>
@@ -79,22 +82,19 @@
                 <img src="../source/proj01/Proj01_Page6.webp"/>
             </div>
         </div>
-        <div onclick="scrollH('container01',-0.3)" class="project-browse-button left">
+        <div onclick="scrollH('container01',-0.6)" class="project-browse-button left">
             <img src="../source/left.svg" />
         </div>
-        <div onclick="scrollH('container01',0.3)" class="project-browse-button right">
+        <div onclick="scrollH('container01',0.6)" class="project-browse-button right">
             <img src="../source/right.svg" />
         </div>
-        <!-- <div class="slide">
-            <img src="../source/slide.svg"/>
-        </div> -->
-
     </div>
+    
 </body>
 <script>
     function scrollH(id,pace){
-        document.getElementById(id).scrollBy(window.screen.width*pace,0);
-        console.log("yeah");
-    }
+            document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
+            console.log(window.screen.width*pace);
+        }
 </script>
 </html>
