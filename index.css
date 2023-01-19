@@ -89,9 +89,6 @@ a:visited:hover #circle{
 
 .top-block{
     padding-top: 25vmin !important;
-    /* color: #ffffff !important;
-    background-image: url("source/banner.svg");
-    background-size: 50% 50%; */
 }
 
 #intro p{
@@ -153,9 +150,6 @@ a:visited:hover #circle{
     padding-right: 0;
     padding-top: 0;
 }
-/* 
-.work-page-container::-webkit-scrollbar { width: 0 !important }
-.work-page-container { -ms-overflow-style: none;overflow: -moz-scrollbars-none; } */
 
 .single-img-of-year{
     display: inline-block;
