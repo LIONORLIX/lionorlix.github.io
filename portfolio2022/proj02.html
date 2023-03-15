@@ -18,7 +18,7 @@
         <div class="nav-align">
             
             <div class="nav-logo nav-div" onclick="home()">
-                <a href="../portfolio.html">
+                <a href="../index.html">
                     <div id="circle"></div>
                     <div id="name">
                         Back
@@ -78,10 +78,10 @@
                 <img src="../source/proj02/Proj02_Page5.webp"/>
             </div>
         </div>
-        <div onclick="scrollH('container01',-0.6)" class="project-browse-button left">
+        <div onclick="scrollH('container01',-0.6)" class="project-browse-button left" id="left-button" style="opacity: 1;">
             <img src="../source/left.svg" />
         </div>
-        <div onclick="scrollH('container01',0.6)" class="project-browse-button right">
+        <div onclick="scrollH('container01',0.6)" class="project-browse-button right" id="right-button" style="opacity: 1;">
             <img src="../source/right.svg" />
         </div>
         <!-- <div class="slide">
@@ -90,10 +90,5 @@
 
     </div>
 </body>
-<script>
-    function scrollH(id,pace){
-            document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
-            console.log(window.screen.width*pace);
-        }
-</script>
+<script src="../js/horizontal-scroll.js"></script>
 </html>
