@@ -10,9 +10,9 @@
         <div class="nav-align">
             <div class="nav-logo nav-div" onclick="home()">
                 <a href="index.html">
-                    <div id="circle">
+                    <div id="circle" style="background-color: white;">
                     </div>
-                    <div id="name">
+                    <div id="name" style="color: white;">
                     LI Xiang
                     </div>
                 </a>
@@ -20,15 +20,15 @@
             <div class="nav-spacer nav-div"></div>
             <div class="nav-content nav-div">
             <div>
-                <a href="index.html#work">Works
+                <a href="index.html#work" id="nav-works" style="color: white;">Works
                 </a>
             </div>
             <div>
-                <a href="portfolio.html">Portfolio
+                <a href="portfolio.html" id="nav-portfolio" style="color: white;">Portfolio
                 </a>
             </div>
             <div>
-                <a href="index.html#about-me">About</a>
+                <a href="index.html#about-me" id="nav-about" style="color: white;">About</a>
             </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                     <p class="title">Galleria</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/xr.webp" />
                 </div>
@@ -107,7 +107,7 @@
                     <p class="soon">SOON...</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/220517.webp" />
                 </div>
@@ -139,7 +139,7 @@
                     <p class="title">WHERE</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/glyph.webp" />
                 </div>
@@ -176,7 +176,7 @@
                     <p class="title">My First Website</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/mobile.webp" />
                 </div>
@@ -186,7 +186,7 @@
                     <p class="soon">SOON...</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/notify.webp" />
                 </div>
@@ -196,7 +196,7 @@
                     <p class="soon">SOON...</p>
                 </div>
             </div>
-            <div class="single-work" onclick="window.location.href = '';">
+            <div class="single-work can-view-soon" onclick="window.location.href = '';">
                 <div class="preview">
                     <img src="source/work_cover/20th.webp" />
                 </div>
@@ -216,6 +216,7 @@
 </body>
 
 <script src="js/pop-text.js"></script>
+<script src="js/header-color-change.js"></script>
 <script>
     function scrollH(id,pace){
             document.getElementById(id).scrollBy({top:0,left:window.screen.width*pace,behavior: 'smooth'});
